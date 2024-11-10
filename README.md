@@ -10,4 +10,5 @@
 * Язык разметки Markdown для составления документации 
 * Системы контроля версий Git
 
-Деплой сайта реалзован с помощью GitHub Pages 
+Деплой сайта реалзован с помощью GitHub Pages  
+https://rggoijrjoiioj.github.io/project/
