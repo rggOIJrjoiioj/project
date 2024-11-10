@@ -8,12 +8,12 @@
 
 
 .header{
-    height: 250px ;
+    height: 40%;
     width: 100%;
     display: flex;
     color: white;
     background-color: black;
-    font-weight: 70;
+    font-weight: 70px;
     font-size: 40px;
     border: 1px solid #000000;
     margin:0 ;
@@ -37,6 +37,7 @@
     text-decoration: none;
     color:white ;
     transition: 1s;
+    word-break: normal;
 }
 
 .header-link1:hover {
@@ -99,7 +100,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 900px;
+    width: 70%;
     margin: auto;
     height: auto;
     border-radius: 40px;
@@ -180,13 +181,11 @@ padding-top: 20px;
     padding-top: 20px;
 }
 .otstup{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    width: 850px;
+    width: 90%;
     font-size: 20px;
-    margin: auto;
+    margin: 20px auto;
 }
+
 .if{
     color: rgba(2, 221, 250, 0.922);
 
@@ -212,7 +211,7 @@ padding-top: 20px;
 }
 
 .task_button{
-    width: 250px;
+    width: 60%;
     height: 25px;
     margin-top: 20px;
     background-color: aqua;
@@ -236,7 +235,7 @@ padding-top: 20px;
 
 }
 .task_button1{
-    width: 250px;
+    width: 60%;
     height: 25px;
     margin-top: 20px;
     background-color: aqua;
@@ -257,20 +256,20 @@ padding-top: 20px;
 
 }
 .task_button2{
-    width: 250px;
+    width: 60%;
     height: 25px;
     margin-top: 20px;
     background-color: aqua;
 }
 
 .task_button3{
-    width: 250px;
+    width: 60%;
     height: 25px;
     margin-top: 20px;
     background-color: aqua;
 }
 .task_button4{
-    width: 250px;
+    width: 60%;
     height: 25px;
     margin-top: 20px;
     background-color: aqua;
