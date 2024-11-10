@@ -1,0 +1,338 @@
+.page{
+    margin: 0 ;
+    background-color: 0000;
+    font-family:"American", Arial, Helvetica, sans-serif ;
+    background-color: #090b0e;
+
+}
+
+
+.header{
+    height: 250px ;
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: black;
+    font-weight: 70;
+    font-size: 40px;
+    border: 1px solid #000000;
+    margin:0 ;
+}
+
+.header-link{
+    font-size: 50px;
+    padding: 20px 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color:white ;
+    transition: 1s;
+}
+
+.header-link1{
+    font-size: 25px;
+    margin: auto;
+    text-decoration: none;
+    color:white ;
+    transition: 1s;
+}
+
+.header-link1:hover {
+    color:rgba(2, 221, 250, 0.922) ;
+}
+
+.header-link:hover {
+    color:rgba(2, 221, 250, 0.922) ;
+}
+
+.header-title{
+    margin: auto;
+    font-size: 100px;
+    height: 150px;
+}
+
+.header-logo{
+    margin: auto  ;
+    width: 300px;
+    height: 200px;
+    object-fit: contain ;
+
+}
+
+@font-face {
+    font-family:"American";
+    src: url(./fonts/americantextc.woff) format(woff), 
+    url(./fonts/americantextc.woff2) format(woff2);
+}
+
+.header1{
+    height: 100px ;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    font-weight: 60;
+    font-size: 40px;
+}
+
+
+.python{
+    margin: auto;
+    color: rgba(2, 221, 250, 0.922) ;
+    line-height: 90px;
+    font-size: 60px;
+}
+
+.poragraf{
+    color: white;
+    margin: auto ;
+    font-size: 25px;
+}
+
+
+.content2{
+    background-color: #0e1423;
+    color: white;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+    height: auto;
+    border-radius: 40px;
+    padding-bottom:50px ;
+    margin-bottom: 30px;
+}
+p{
+    margin: 0;
+}
+
+.p1{
+width: 850px;
+font-size: 20px;
+margin: auto;
+padding-top: 20px;
+
+
+
+}
+.com{
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.knopka{
+    background-color:  rgba(2, 221, 250, 0.922) ;
+    margin: 10px auto;
+    width: 90px;
+}
+.dysha{
+    display: none;
+    background-color: chartreuse;
+    font-size: 20px;
+    font-weight: 600;
+    color: darkmagenta;
+    margin: 20px auto;
+    border-radius:20px ;
+    width: 170px;
+    text-align: center;
+}
+.table {
+    margin: auto;
+	width: 70%;
+	border: 2px solid rgba(98, 14, 158, 0.922);
+	border-top: 2px solid rgba(98, 14, 158, 0.922);
+    border-radius: 20px;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	border: none;
+	border-bottom: 2px solid rgba(98, 14, 158, 0.922);
+    font-weight: 500;
+}
+.zagolovok{
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.table td  {
+	padding: 5px;
+
+
+}
+.table_text{
+    border-left: 2px solid rgba(98, 14, 158, 0.922);
+}
+
+.forwhile{
+    padding-top: 20px;
+}
+.otstup{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 850px;
+    font-size: 20px;
+    margin: auto;
+}
+.if{
+    color: rgba(2, 221, 250, 0.922);
+
+}
+.uslov{
+    color: rgba(140, 115, 211, 0.909);
+    font-size: 20px;
+
+}
+.red{
+    color: rgba(237, 106, 69, 0.852);
+    font-size: 20px;
+
+}
+.text{
+    color: rgba(11, 191, 219, 0.852);
+    font-size: 20px;
+
+}
+.uclov{
+    font-size: 20px;
+    color: white
+}
+
+.task_button{
+    width: 250px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: aqua;
+    border: none;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.solution {
+    display: none;
+}
+.prim{
+    align-items: center;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+.task_button1{
+    width: 250px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: aqua;
+    border: none;
+}
+.task1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.solution1 {
+    display: none;
+    width: 850px;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.task_button2{
+    width: 250px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+.task_button3{
+    width: 250px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.task_button4{
+    width: 250px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.task2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}.task3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}.task4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.solution2{
+    display: none;
+    width: 850px;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.solution3 {
+    display: none;
+    width: 850px;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.solution4 {
+    display: none;
+    width: 850px;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.prim1{
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.otstup2{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 850px;
+    font-size: 30px;
+    margin: auto;
+
+}
+.spis{
+    list-style-type:none;
+}
+.fio{
+    margin-bottom:10px ;
+}
