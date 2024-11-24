@@ -169,6 +169,13 @@
                      например, при выполнении определенного условия.</td>
             </tr>
             </table>
+            <div>
+                <p class="p1">Циклы являются мощным инструментом в Python,
+                     позволяющим эффективно обрабатывать данные и выполнять повторяющиеся задачи.
+                      Понимание их работы поможет вам писать более гибкий и эффективный код.
+                     Если у вас есть дополнительные вопросы или хотите узнать больше о
+                      какой-либо конкретной теме, дайте знать!</p>
+            </div>
             <div class="p1">
                 <h1 class="prim">Синтаксис:</h1>
                 <h2 class="prim">Цикл while</h2>
@@ -179,20 +186,25 @@
             
             
             </div>
+          
            
 
         </div>
+
         <h1 id="3">Задания для закрепления</h1>
+
         <div class="task">
         <p class="p1">1) Дано число. Проверьте, отрицательное оно или нет. Выведите об этом информацию в консоль.</p>
         <button type="button" name="button" class="task_button"> Узнать решение  ></button>
-        <p class="solution"> <span class="text"># Запрашиваем у пользователя ввод числа</span><br>
-        <span class="red">number</span> = <span class="uslov">float(input("Введите число: "))</span>
-        <span class="text"># Проверяем, отрицательное ли число</span>
-        <span class="uslov">if</span>  <span class="red"> number < 0:</span>
-        <span class="red">print</span><span class="text">("Число отрицательное.")</span>
-        <span class="uslov">else:</span>
-        <span class="red">print</span><span class="text">("Число не отрицательное.")</span>
+        <p class="solution">
+        <span class="text"># Запрашиваем у пользователя ввод числа</span><br>
+        <span class="red">number</span> = <span class="uslov">float(input("Введите число: "))</span><br>
+        <span class="text"># Проверяем, отрицательное ли число</span><br>
+        <span class="uslov">if</span>  <span class="red"> number < 0:</span><br>
+        <span class="red">print</span><span class="text">("Число отрицательное.")</span><br>
+        <span class="uslov">else:</span><br>
+        <span class="red">print</span><span class="text">("Число не отрицательное.")</span><br>
+        <span class="p1"> не забываем про отступы</span>
         </p>
         </div>
 
@@ -201,16 +213,15 @@
             <p class="p1">2)Напишите программу, которая запрашивает у пользователя 10 чисел и выводит, сколько из них четные, а сколько нечетные.</p>
             <button type="button" name="button" class="task_button1"> Узнать решение  ></button>
             <p class="solution1">
-                even_count = 0
-                odd_count = 0
-                for i in range(10):
-                number = int(input("Введите число: "))
-                if number % 2 == 0:
-                even_count += 1
-                else:
-                odd_count += 1
-                print(f"Четные числа: {even_count}, Нечетные числа: {odd_count}")
-
+            <span class="red">even_count</span> = <span class="uslov">0</span><br>
+            <span class="red">odd_count</span> = <span class="uslov">0</span><br>
+            <span class="uslov">for i in range</span> (10)<span class="red">:</span><br>
+            <span class="red">number</span> = <span class="uslov">int(input("Введите число: "))</span><br>
+            <span class="uslov">if</span> number % 2 == 0 <span class="red">:</span><br>
+            even_count += 1<br>
+            <span class="uslov">else</span> <span class="red">:</span><br>
+            odd_count += 1<br>
+            <span class="red">print</span><span class="text">(f"Четные числа: {even_count}, Нечетные числа: {odd_count}")</span><br>
             </p>
 
         </div>
@@ -218,13 +229,13 @@
             <p class="p1">3) Напишите программу, которая запрашивает у пользователя положительные числа до тех пор, пока он не введет отрицательное число. Программа должна вывести сумму введенных положительных чисел.</p>
             <button type="button" name="button" class="task_button2"> Узнать решение  ></button>
             <p class="solution2">
-                total_sum = 0
-                while True:
-                number = int(input("Введите положительное число (или отрицательное для выхода): "))
-                if number < 0:
-                break
-                total_sum += number
-                print(f"Сумма введенных положительных чисел: {total_sum}")
+                <span class="red">total_sum</span> = <span class="uslov">0</span><br>
+                <span class="uslov">while</span> <span class="text">True</span>:<br>
+                <span class="red">number</span> = <span class="uslov">int(input("Введите положительное число (или отрицательное для выхода): "))</span><br>
+                <span class="uslov">if</span> number < <span class="uslov">0</span>:<br>
+                <span class="uslov">break</span>
+                <span class="red">total_sum</span> += <span class="uslov">number</span><br>
+                <span class="red">print</span><span class="text">(f"Сумма введенных положительных чисел: {total_sum}")</span><br>
 
             </p>
 
@@ -265,5 +276,5 @@
 
 
     
-    <script src="../script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
