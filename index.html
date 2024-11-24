@@ -77,39 +77,44 @@
             </p>
     <div class="com" > 
         <h2> Оставте обратный чикчик</h2>
-        <form class="form"> 
-            <label class="fio"> фио</label>
-            <input type="text" required placeholder="Введите ФИО" class="fio">  
-            <label  class="fio"> номер телефона</label>
-            <input  class="fio" type="tel" placeholder="Введите номер телефона" required>
-            <label  class="fio"> Оставить мнение </label>
+        <form class="form" action="#" method="post"> 
+            <label class="fio"> ФИО</label>
+            <input type="text" required placeholder="Введите ФИО" class="fio" name="fio">  
+        
+            <label class="fio"> Номер телефона</label>
+            <input type="tel" placeholder="Введите номер телефона" required name="phone">
+        
+            <label class="fio"> Оставить мнение </label>
             <label> 
-                <input type="radio" name="mark">
-                плохо 
+                <input type="radio" name="mark" value="плохо" required>
+                Плохо 
             </label>
             <label> 
-                <input type="radio" name="mark">
-                ну пойдет
+                <input type="radio" name="mark" value="ну пойдет">
+                Ну пойдет
             </label>
             <label> 
-                <input type="radio" name="mark">
-                иришка чики-пики
+                <input type="radio" name="mark" value="иришка чики-пики">
+                Иришка чики-пики
             </label>
             <label> 
-                <input type="radio" name="mark" class="fio">
-                чиназес
+                <input type="radio" name="mark" value="чиназес">
+                Чиназес
             </label>
-            <label  class="fio"> для кого?</label>
-            <select> 
-                <option> челове </option>
-                <option> собака</option>
-                <option> нечеловек</option>
-                <option> несобака</option>
-
+        
+            <label class="fio"> Для кого?</label>
+            <select name="for_whom" required> 
+                <option value="">Выберите</option>
+                <option value="человек">Человек</option>
+                <option value="собака">Собака</option>
+                <option value="нечеловек">Нечеловек</option>
+                <option value="несобака">Несобака</option>
             </select>
-            <button class="knopka">отправить бобу</button> 
-            <p class="dysha">от души братишка</p>
+        
+            <button type="submit" class="knopka">Отправить бобу</button> 
+            <p class="dysha">От души, братишка</p>
         </form>
+        
     </div>
 </div>
 <script src="./scripts/script1.js"></script>
