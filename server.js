@@ -15,7 +15,6 @@ app.get('/feedbacks', (req, res) => {
     res.json(feedbacks);
 });
 
-
 app.post('/feedbacks', (req, res) => {
     const feedback = req.body;
     feedbacks.push(feedback);
