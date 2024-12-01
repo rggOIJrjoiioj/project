@@ -31,5 +31,5 @@ app.get('/data', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Сервер запущен на http://localhost:${PORT}`);
+    console.log(`Сервер запущен на http://192.168.1.115:${PORT}`);
 });

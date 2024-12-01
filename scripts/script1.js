@@ -15,7 +15,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     // Для отладки: выводим данные в консоль
     console.log(jsonData);
 
-    fetch('http://localhost:3000/submit', {
+    fetch('http://192.168.1.115:3000/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json' // Указываем, что отправляем JSON
@@ -32,3 +32,37 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         alert('Произошла ошибка при отправке данных.');
     });
 });
+
+function loadComments() {
+    fetch('http://192.168.1.115:3000/data') // Предполагаем, что у вас есть этот эндпоинт
+        .then(response => response.json())
+        .then(comments => {
+            const commentsList = document.getElementById('commentsList');
+            commentsList.innerHTML = ''; // Очищаем список комментариев
+
+            // Проверяем, есть ли комментарии
+            if (comments.length === 0) {
+                commentsList.innerHTML = '<p>Нет комментариев.</p>'; // Сообщение, если комментариев нет
+                return;
+            }
+
+            // Перебираем и отображаем каждый комментарий
+            comments.forEach(comment => {
+                const commentDiv = document.createElement('div');
+                commentDiv.classList.add('comment');
+                commentDiv.innerHTML = `
+                    <strong>${comment.fio}</strong> (${comment.phone})<br>
+                    Оценка: ${comment.mark}<br>
+                    Для кого: ${comment.for_whom}
+                `;
+                commentsList.appendChild(commentDiv);
+            });
+        })
+        .catch(error => {
+            console.error('Ошибка при загрузке комментариев:', error);
+        });
+}
+
+window.onload = loadComments;
+
+// Загружаем коммен
