@@ -58,12 +58,13 @@
     .header-title {
         font-size: 60px;
         height: 100px;
+        color:rgba(98, 14, 158, 0.922)
     }
 }
 
 @media (max-width: 480px) {
     .header-title {
-        font-size: 40px;
+        font-size: 10em;
         height: 80px;
     }
 }
@@ -133,10 +134,8 @@ width: 90%;
 font-size: 20px;
 margin: 0;
 padding-top: 20px;
-
-
-
 }
+
 .com{
     font-size: 20px;
     margin: 0 auto;

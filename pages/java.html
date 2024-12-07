@@ -150,10 +150,7 @@
                 </tr>
                 </table>
         </div>
-        <div class="p1">
-            <h1 class="prim">Синтаксис:</h1>
-
-        </div>
+       
 
         <div class="p1" >
             <p class="forwhile"> После идут циклы, не менее важная деталь в Java.
@@ -216,13 +213,141 @@
                      Если у вас есть вопросы или хотите обсудить какую-либо тему подробнее, не стесняйтесь спрашивать!</p></div>
             </tr>
             </table>
-            <div class="p1">
-                <h1 class="prim">Синтаксис:</h1>
-            </div>
-           
 
         </div>
         <h1>Задания для закрепления</h1>
+
+        <div class="task">
+            <p class="p1">Задание 1: Определение типа данных. Условие: Напишите программу, 
+                которая запрашивает у пользователя ввод значения и определяет его тип 
+                (целое число, дробное число или строка)..</p>
+            <button type="button" name="button" class="task_button"> Узнать решение  ></button>
+            <p class="solution">
+                import java.util.Scanner;
+
+                public class DataTypeChecker {
+                    public static void main(String[] args) {
+                        Scanner scanner = new Scanner(System.in);
+                        System.out.print("Введите значение: ");
+                        
+                        if (scanner.hasNextInt()) {
+                            System.out.println("Это целое число.");
+                        } else if (scanner.hasNextDouble()) {
+                            System.out.println("Это дробное число.");
+                        } else {
+                            System.out.println("Это строка.");
+                        }
+                        
+                        scanner.close();
+                    }
+                }
+                
+            </p>
+            </div>
+    
+    
+            <div class="task1">
+                <p class="p1">Задание 2: Таблица умножения 
+                    Условие: Напишите программу, которая выводит таблицу умножения от 1 до 10.</p>
+                <button type="button" name="button" class="task_button1"> Узнать решение  ></button>
+                <p class="solution1">
+                    public class MultiplicationTable {
+                        public static void main(String[] args) {
+                            System.out.println("Таблица умножения от 1 до 10:");
+                            
+                            for (int i = 1; i <= 10; i++) {
+                                for (int j = 1; j <= 10; j++) {
+                                    System.out.printf("%d x %d = %d\t", i, j, i * j);
+                                }
+                                System.out.println();
+                            }
+                        }
+                    }
+                    
+                </p>
+    
+            </div>
+            <div class="task2">
+                <p class="p1">▎Задание 3: Сумма чисел
+
+                    Условие: Напишите программу, которая запрашивает у пользователя целое число N и вычисляет сумму всех целых чисел от 1 до N</p>
+                <button type="button" name="button" class="task_button2"> Узнать решение  ></button>
+                <p class="solution2">
+                    import java.util.Scanner;
+
+                    public class SumOfNumbers {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            System.out.print("Введите целое число N: ");
+                            int N = scanner.nextInt();
+                            int sum = 0;
+                            
+                            for (int i = 1; i <= N; i++) {
+                                sum += i;
+                            }
+                    
+                            System.out.println("Сумма чисел от 1 до " + N + " = " + sum);
+                            scanner.close();
+                        }
+                    }
+                    
+    
+                </p>
+    
+            </div>
+            <div class="task3">
+                <p class="p1">Задание 4: Фибоначчи 
+                    Условие: Напишите программу, которая выводит первые N чисел последовательности Фибоначчи, где N вводится пользователем.
+                    </p>
+                <button type="button" name="button" class="task_button3"> Узнать решение  ></button>
+                <p class="solution3">
+                    import java.util.Scanner;
+
+                    public class FibonacciSequence {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            System.out.print("Введите количество чисел Фибоначчи для вывода: ");
+                            int N = scanner.nextInt();
+                            
+                            int a = 0, b = 1;
+                            
+                            System.out.println("Последовательность Фибоначчи:");
+                            for (int i = 1; i <= N; i++) {
+                                System.out.print(a + " ");
+                                int next = a + b;
+                                a = b;
+                                b = next;
+                            }
+                            
+                            scanner.close();
+                        }
+                    }
+
+    
+                </p>
+    
+            </div>
+            <div class="task4">
+                <p class="p1">Задание 5: Четные числа от 1 до 100 Условие: Напишите программу, которая выводит все четные числа от 1 до 100.
+                    </p>
+                <button type="button" name="button" class="task_button4"> Узнать решение  ></button>
+                <p class="solution4">
+                    public class EvenNumbers {
+                        public static void main(String[] args) {
+                            System.out.println("Четные числа от 1 до 100:");
+                            
+                            for (int i = 1; i <= 100; i++) {
+                                if (i % 2 == 0) {
+                                    System.out.print(i + " ");
+                                }
+                            }
+                        }
+                    }
+                    
+    
+                </p>
+    
+            </div>
         
     </div>
 
