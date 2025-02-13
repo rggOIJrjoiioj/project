@@ -1,7 +1,7 @@
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+    event.preventDefault(); 
 
-    // Собираем данные формы в объект
+   
     const formData = {
         fio: this.fio.value,
         phone: this.phone.value,
@@ -9,23 +9,22 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         for_whom: this.for_whom.value
     };
 
-    // Преобразуем объект в JSON
+    
     const jsonData = JSON.stringify(formData);
 
-    // Для отладки: выводим данные в консоль
     console.log(jsonData);
 
     fetch('http://192.168.1.115:3000/submit', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json' // Указываем, что отправляем JSON
+            'Content-Type': 'application/json' 
         },
-        body: jsonData // Отправляем JSON в теле запроса
+        body: jsonData 
     })
-    .then(response => response.text()) // Получаем текстовый ответ от сервера
+    .then(response => response.text()) 
     .then(data => {
-        console.log(data); // Выводим ответ в консоль
-        alert('Данные успешно отправлены!'); // Можно вывести сообщение для пользователя
+        console.log(data); 
+        alert('Данные успешно отправлены!'); 
     })
     .catch(error => {
         console.error('Ошибка:', error);
@@ -34,19 +33,17 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
 });
 
 function loadComments() {
-    fetch('http://192.168.1.115:3000/data') // Предполагаем, что у вас есть этот эндпоинт
+    fetch('http://192.168.1.115:3000/data') // 
         .then(response => response.json())
         .then(comments => {
             const commentsList = document.getElementById('commentsList');
-            commentsList.innerHTML = ''; // Очищаем список комментариев
+            commentsList.innerHTML = ''; 
 
-            // Проверяем, есть ли комментарии
+            
             if (comments.length === 0) {
-                commentsList.innerHTML = '<p>Нет комментариев.</p>'; // Сообщение, если комментариев нет
-                return;
+                commentsList.innerHTML = '<p>Нет комментариев.</p>'; 
             }
-
-            // Перебираем и отображаем каждый комментарий
+           
             comments.forEach(comment => {
                 const commentDiv = document.createElement('div');
                 commentDiv.classList.add('comment');
